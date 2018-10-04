@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <form class="form">
+        <div class="data-form">
+            <label class="form-label">Имя</label>
+            <input class="first-name form-input" type="text">
+            <label class="form-label">Фамилия</label>
+            <input class="last-name form-input" type="text">
+            <label class="form-label">Отчество</label>
+            <input class="patronymic form-input" type="text">
+            <label class="form-label">Возраст</label>
+            <input class="age form-input" type="number">
+            <label class="form-label">Пол</label>
+            <select class="gender form-input">
+                <option name="man">мужской</option>
+                <option name="woman">женский</option>
+            </select>
+        </div>
+        <button class="confirm" onclick="saveDataForm()">Save</button>
+        <button class="load-data-form" onclick="showProfile()" type="button">Load</button>
+    </form>
+
+<!-- The Modal -->
+<div class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-profile">
+            <ul class="profile">
+                <li class="profile_name"></li>
+                <li class="profile_age"></li>
+                <li class="profile_days"></li>
+                <li class="profile_gender"></li>
+                <li class="profile_pension"></li>
+            </ul>            
+        </div>
+    </div>
+  </div>
+
+</div>
+	
+   
+        
+    <script src="js.js"></script>
+</body>
+</html>
